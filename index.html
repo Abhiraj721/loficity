@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Albert+Sans:wght@300&family=Changa&family=Comfortaa&family=Edu+TAS+Beginner&family=Josefin+Sans:ital,wght@0,300;0,400;1,700&family=Kanit:ital,wght@0,300;1,300&family=Lexend+Deca&family=Rubik:wght@300&family=Silkscreen&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loficity</title>
+</head>
+<body scroll="no">
+   <center>
+    <div class="row">
+    <div class=" col col-xs-2 col-lg-4 ">
+      <img class="logo"  height="53px" src="/logo/loficity-logos_transparentt.png" alt="">
+    </div>
+    <div class=" col col-xs-2 col-lg-2 ">
+<a href="#" style="text-decoration: none;"><p class="time" onClick="showgreeting()"></p></a>
+      </div>
+    <div class=" col col-xs-8 col-lg-6  btnmin">
+    <button onClick="changebeatback()"><img   src="https://app.lofi.co/icons/new/prev.svg" alt=""></button>
+    <button class="playbtn playpause" onClick="main()"></button>
+    <button class="playbtn" onClick="changebeatforw()"><img class="kkk" src="https://app.lofi.co/icons/new/next.svg" alt=""></button>
+    <!-- <img src="https://app.lofi.co/icons/controls/volume-down.svg" class="psvg volgrp" alt=""> <input  type="range" oninput="sliderChange(this.value)" min="0" max="100"  class="slider" id="myRange"><img src="/icons/controls/volume-up.svg" class="psvg" alt=""><img src="https://app.lofi.co/icons/controls/volume-up.svg" class="psvg" alt=""></center>  -->
+</div>
+</div>
+<div class="icon-bar" style="position: sticky;">
+    <button  class="mixer" onClick="mixer()"><img src="https://app.lofi.co/icons/new/menu-mixer.svg" alt=""></button>
+    <button  class="scenes_btn" onClick="scenes()"><img src="https://app.lofi.co/icons/new/menu-scenes.svg" alt=""></button>
+
+  </div>
+  
+    <div id="mydiv">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="mydivheader">Mixer    <a href="#" class="close_mixer" onclick="Hide(mydiv);">X</a></div>         
+        
+
+
+    <table>
+     <h4 class="getme"></h4>
+        <tr>
+            <td>    <label for="mailId[]"> Rain</label></td>
+            <td> <input oninput="onInputrain(this)" class="messageCheckbox" type="checkbox" value="3" name="mailId[]">  <input type="range"oninput="rainvolume(this.value)" min="0" max="100"  class="slider" id="myRange"></td>
+   
+        </tr>
+ <tr>
+    <td><label for="mailId[]"> Nature</label></td>
+ <td><input oninput="onInputnature(this)" class="messageCheckbox" type="checkbox" value="3" name="mailId[]">  <input type="range"oninput="naturevolume(this.value)" min="0" max="100"  class="slider" id="myRange"></td>
+</tr>
+<tr>
+    <td><label for="mailId[]"> Waterfall</label></td>
+ <td><input oninput="onInputwf(this)" class="messageCheckbox" type="checkbox" value="3" name="mailId[]">  <input type="range"oninput="wfvolume(this.value)" min="0" max="100"  class="slider" id="myRange"></td>
+</tr>
+    </table>
+      </div>
+      <div class="container" style="height: 200px; width:500px;">
+        <b> <h3 id="greet" class="greetings"></h3></b>
+         <h4 class="dayandtime"></h4>
+         <h5 class="quote"></h5>
+       </div>
+      <div class="scenes" id="Bar">
+        <div id="right">
+          <a href="#" style="  font-family: Silkscreen, cursive; text-decoration: none;" onclick="Hide(Bar);">X</a>
+        </div>
+        <div id="left">
+         <div class="row" id="gifs">
+          <h4 style="    font-family: Silkscreen, cursive;">Scenes</h4>
+
+         </div>
+        </div>
+      </div>
+   <script src="index.js"></script>
+</body>
+</html>
